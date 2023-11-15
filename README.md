@@ -7,7 +7,7 @@
 
 # Deployment
 
-1) Fork the following repo https://github.com/open-sudo/rosa-idp.git to your github repo.
+1) Fork the following repo https://github.com/kubecutle/rosa-idp.git to your github repo.
 
 2) Clone the repo you just forked
 ```shell
@@ -23,7 +23,7 @@ cd rosa-idp
 The deploy.sh script does 3 things:
 
    * Modify argocd/root-application.yaml to insert the actual cluster name, the aws account Id, and the region.  
-   * Modify all files at argocd/applications/templates so they point to the forked repo instead of open-sudo
+   * Modify all files at argocd/applications/templates so they point to the forked repo instead of kubecutle
    * Execute the cloudformation scripts and wait for their completion
 
 

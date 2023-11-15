@@ -6,14 +6,14 @@ metadata:
 spec:
   project: default
   source:
-       repoURL: https://github.com/open-sudo/rosa-idp.git
+       repoURL: https://github.com/kubecutle/rosa-idp.git
        path: argocd/applications
        targetRevision: HEAD
        helm:
          values: | 
-            awsRegion: __REGION__
-            awsAccountId: '__AWS_ACCOUNT_ID__'
-            clusterName: __CLUSTER_NAME__
+            awsRegion: us-east-1
+            awsAccountId: '743889279358'
+            clusterName: cora
   destination:
     server: https://kubernetes.default.svc
     namespace: openshift-gitops
